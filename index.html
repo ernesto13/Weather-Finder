@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>WEATHER FINDER</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/superhero/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/bootstrap.min.css" />
+    <!-- insert font awesome because it is -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="jumbotron">
+
+            <h1 class="mb-3"><i class="fas fa-sun"></i> Weather Finder</h1>
+            <input id="search-city" class="form-control col-sm-6 mx-auto mb-4" placeholder="find your city's temp" />
+            <button id="search-btn" class="btn btn-primary mb-2"><i class="fas fa-thermometer-empty"></i> Search City</button>
+            <!-- <div id ="icon"></div> -->
+            <div class="city"></div><span id="icon"></span>
+
+
+            <div class="container mt-4">
+                <div class="row">
+                    <!-- card for current temps min and max -->
+                    <div class="col-md-6 col-lg-6">
+
+                        <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
+                            <div class="card-header city-card"></div>
+                            <div class="card-body">
+                                <!-- <h4 class="card-title">Primary card title</h4> -->
+                                <div id="temperature"></div>
+                                <div id="max-temp"></div>
+                                <div id="min-temp"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2nd card for descriptions -->
+                    <div class="col-md-6 col-lg-6">
+
+                        <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
+                            <div class="card-header city-card"></div>
+                            <div class="card-body">
+                                <!-- <h4 class="card-title">Primary card title</h4> -->
+                                <div id="humidity"></div>
+                                <div id="description"></div>
+
+                                <div id="wind"></div>
+                                <!-- <div id="rain"></div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="footer" class="footer text-center fixed-bottom date">
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
+
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
